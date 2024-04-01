@@ -2,6 +2,7 @@ package com.sp.entity;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import java.lang.Long;
 import org.springframework.stereotype.Controller;
 
 import jakarta.persistence.Column;
@@ -64,6 +65,9 @@ public class Account {
 		this.balance = balance;
 	}
 
+	public Account() {
+		
+	}
 
 	public Account(Long id, String accountHolderName, double balance) {
 		super();
