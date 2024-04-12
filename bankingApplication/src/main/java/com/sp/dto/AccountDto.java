@@ -1,6 +1,15 @@
 package com.sp.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class AccountDto {
+	
+	private Long id;
+	private String accountHolderName;
+	private double balance;
 	
 	public Long getId() {
 		return id;
@@ -26,9 +35,10 @@ public class AccountDto {
 		this.accountHolderName = accountHolderName;
 		this.balance = balance;
 	}
-	private Long id;
-	private String accountHolderName;
-	private double balance;
+	public AccountDto() {
+		
+	}
+
 	
 	
 	

@@ -4,6 +4,6 @@ import com.sp.dto.AccountDto;
 
 public interface AccountService {
 	
-	AccountDto createAccount(AccountDto account);
+	AccountDto createAccount(AccountDto accountDto);
 
 }
